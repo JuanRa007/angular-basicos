@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## DATOS:
+
+https://gist.github.com/Klerith/3ddee04a27c09be05e888d5d4ac1d09f
+
+
+## Comandos.
+
+ng generate component heroes/listado
+  Me genera un nuevo componente (ts, html, css) en la ubicación que indico (/heroes), con el nombre "listado.
+
+
