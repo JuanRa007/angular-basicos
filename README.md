@@ -37,4 +37,10 @@ https://gist.github.com/Klerith/3ddee04a27c09be05e888d5d4ac1d09f
 ng generate component heroes/listado
   Me genera un nuevo componente (ts, html, css) en la ubicación que indico (/heroes), con el nombre "listado.
 
+ng generate module <nombre>
+  Me genera un nuevo módulo con las importaciones. Incluso con "CommonModule" para poder usar los *ngFor, *ngIf...
+
+ng generate component dbz/mainPage --skip-tests
+  Me genera el componente, y al estar dentro de la carpeta DBZ (módulo creado anteriormente), me actualiza su DBZMODULE.ts con este nuevo componente.
+
 
