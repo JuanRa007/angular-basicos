@@ -27,9 +27,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-## DATOS:
+## ENLACES:
 
 https://gist.github.com/Klerith/3ddee04a27c09be05e888d5d4ac1d09f
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+https://github.com/Klerith/angular-basicos/releases/tag/v5.0.0
+
+https://angular.io/cli/build
+
 
 
 ## Comandos.
@@ -43,4 +50,6 @@ ng generate module <nombre>
 ng generate component dbz/mainPage --skip-tests
   Me genera el componente, y al estar dentro de la carpeta DBZ (módulo creado anteriormente), me actualiza su DBZMODULE.ts con este nuevo componente.
 
+ng build --configuration production
+  Generar los recuros para producción.
 

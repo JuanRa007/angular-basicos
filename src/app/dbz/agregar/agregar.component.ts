@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-agregar',
@@ -12,8 +13,12 @@ export class AgregarComponent {
     poder: 0
   }
 
+  constructor(private DbzService: DbzService) {
+
+  }
+
   // Emite evetos al componente padre, expecificando el tipo entre <>.
-  @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter;
+  // @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter;
 
   agregar() {
     // event.preventDefault();
@@ -22,7 +27,9 @@ export class AgregarComponent {
       return;
     }
 
-    this.onNuevoPersonaje.emit(this.nuevo);
+    // this.onNuevoPersonaje.emit(this.nuevo);
+
+    this.DbzService.agregarPersonaje(this.nuevo);
 
     // Inicializar nuevo para ver los campos vacíos en el form
     this.nuevo = {
